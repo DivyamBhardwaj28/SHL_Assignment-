@@ -5,8 +5,6 @@ from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware
-
-# Import the Pydantic schemas and the core Gemini logic from your agent module
 from agent import ChatRequest, ChatResponse, generate_agent_response
 
 # --- Configuration & Logging ---
